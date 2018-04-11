@@ -14,6 +14,11 @@
   </div>
 
 <div class="form-group">
+    <%= f.label :neighborhood_cont, "Neighborhood contains" %>
+    <%= f.text_field :neighborhood_cont, :class => "form-control", :placeholder => "Neighborhood contains" %>
+  </div>
+
+<div class="form-group">
     <%= f.label :popular_dishes_cont, "Popular dishes contains" %>
     <%= f.text_field :popular_dishes_cont, :class => "form-control", :placeholder => "Popular dishes contains" %>
   </div>
@@ -82,6 +87,7 @@
         <th>Name</th>
         <th>Address</th>
         <th>Popular dishes</th>
+        <th>Neighborhood</th>
         <th>Actions</th>
       </tr>
 
@@ -90,6 +96,7 @@
         <td><%= venue.name %></td>
         <td><%= venue.address %></td>
         <td><%= venue.popular_dishes %></td>
+        <td><%= venue.neighborhood %></td>
         <td>
           <a href="/venues/<%= venue.id %>" class="btn btn-primary">Show</a>
           <a href="/venues/<%= venue.id %>/edit" class="btn btn-warning">Edit</a>

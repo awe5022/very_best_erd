@@ -25,6 +25,7 @@ class VenuesController < ApplicationController
     @venue.name = params[:name]
     @venue.address = params[:address]
     @venue.popular_dishes = params[:popular_dishes]
+    @venue.neighborhood = params[:neighborhood]
 
     save_status = @venue.save
 
@@ -54,6 +55,7 @@ class VenuesController < ApplicationController
     @venue.name = params[:name]
     @venue.address = params[:address]
     @venue.popular_dishes = params[:popular_dishes]
+    @venue.neighborhood = params[:neighborhood]
 
     save_status = @venue.save
 
