@@ -4,6 +4,7 @@ class CreateVenues < ActiveRecord::Migration
       t.string :name
       t.string :address
       t.string :popular_dishes
+      t.string :neighborhood
 
       t.timestamps
 

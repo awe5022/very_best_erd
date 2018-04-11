@@ -23,6 +23,7 @@ class DishesController < ApplicationController
     @dish = Dish.new
 
     @dish.name = params[:name]
+    @dish.cuisine = params[:cuisine]
 
     save_status = @dish.save
 
@@ -50,6 +51,7 @@ class DishesController < ApplicationController
     @dish = Dish.find(params[:id])
 
     @dish.name = params[:name]
+    @dish.cuisine = params[:cuisine]
 
     save_status = @dish.save
 

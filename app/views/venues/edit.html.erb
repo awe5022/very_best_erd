@@ -45,6 +45,15 @@
         <input type="text" id="popular_dishes" name="popular_dishes" placeholder="Popular dishes" class="form-control" value="<%= @venue.popular_dishes %>">
       </div>
 
+      <!-- Label and input for neighborhood -->
+      <div class="form-group">
+        <label for="neighborhood" class="control-label">
+          Neighborhood
+        </label>
+
+        <input type="text" id="neighborhood" name="neighborhood" placeholder="Neighborhood" class="form-control" value="<%= @venue.neighborhood %>">
+      </div>
+
       <button class="btn btn-warning">
         Update Venue
       </button>
